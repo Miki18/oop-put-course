@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+class komputer
+{
+public:
+    int Ram;
+    string karta_graficzna;
+    string procesor;
+    string kolor;
+};
+
+class human
+{
+public:    
+    int wiek;
+    int wzrost;
+    int waga;
+    string imie;
+    string nazwisko;
+};
+
+
+int main()
+{
+    komputer dell;
+    dell.Ram = 100;
+    dell.karta_graficzna = "NvidiaGeForce980x";
+    dell.procesor = "intelcore_i5";
+    dell.kolor = "czarny";
+    komputer asus;
+    asus.Ram = 200;
+    asus.karta_graficzna = "NvidiaRTX3060";
+    asus.procesor = "intelcore_i9";
+    asus.kolor = "czarny_czerwony";
+    human Mikolaj;
+    Mikolaj.wiek = 20;
+    Mikolaj.wzrost = 179;
+    Mikolaj.waga = 60;
+    Mikolaj.imie = "Mikolaj";
+    Mikolaj.nazwisko = "Adamczak";
+    return 0;
+}
