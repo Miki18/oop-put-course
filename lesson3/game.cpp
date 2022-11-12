@@ -19,7 +19,7 @@ class authors
 			studio_CEO = b;
 			studio_create_year = c;
 		}
-		authors_read()
+		aread()
 		{
 			cout<<"Studio name: "<<studio_name<<endl;
 			cout<<"Studio CEO: "<<studio_CEO<<endl;
@@ -42,13 +42,13 @@ class game
 			genre = b;
 			release_year = c;
 		}
-		game_read()
+		gread()
 		{
 			cout<<"Game title: "<<title<<endl;
 			cout<<"Genre: "<<genre<<endl;
 			cout<<"Release year: "<<release_year<<endl;
 			cout<<" "<<endl;
-			studio.authors_read();
+			studio.aread();
 		}
 };
 
@@ -56,5 +56,5 @@ int main()
 {
 	authors studio("CD Project Red", "Adam Kicinski", 1994);
 	game witcher(studio, "The Witcher 3", "RPG", 2016);
-	witcher.game_read();
+	witcher.gread();
 }
